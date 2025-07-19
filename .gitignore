@@ -130,6 +130,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+
 .jupyter_env
 .visual_env
 env/
