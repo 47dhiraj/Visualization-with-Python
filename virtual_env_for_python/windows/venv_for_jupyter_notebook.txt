@@ -1,0 +1,62 @@
+# To setup virtual env for jupyter Notebook / Lab in Windows OS:
+
+
+    (BEST way of creating virtual env using "venv")
+
+        1) To Creates the virutal environment folder
+
+            SYNTAX : ==> python -m venv virtual_env_folder
+
+            eg: python -m venv jupyter_env
+
+
+
+    (ALTERNATIVE way of creating virtual env using "virutalenv")
+
+        0) Only one time installation command (only if virutalenv is not previously installed on windows os)
+
+            open Windows PowerShell in Administrator/Admin mode & type following installation command:
+
+                ==> pip install virtualenv 		
+
+        1) To create virtual env folder:
+
+            SYNTAX ==> virtualenv virtual_env_folder
+
+            eg: virtualenv jupyter_env
+
+
+
+    # NOW, To Activate virtual environment:
+
+        SYNTAX : ==> virtual_env_folder\scripts\activate
+
+        eg: jupyter_env\scripts\activate
+
+        (Optional) : It gives location of virutalenv python which is currently in use.
+            ==> which python
+
+    
+    # Again, To Install Jupyter:
+
+        ==> pip install jupyter
+
+    
+    (OPTIONAL) For setting up seperate python kernel for virtual env: 
+
+        SYNTAX : ==> python -m ipykernel install --user --name=venv
+
+        eg: python -m ipykernel install --user --name=jupyter_env
+
+    
+
+    Finally, To execute/run jupyter notebook/lab server in port '8888' tree::
+
+        ==> jupyter notebook
+
+            OR
+
+        ==> jupyter lab
+
+
+Wallah !

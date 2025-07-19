@@ -1,0 +1,50 @@
+ 
+# To install/setup jupyter notebook/lab in virtualenv in Linux OS / Mac OS:
+
+    # (One time setup command): Only install python-venv if already not installed on OS:
+
+        SYNTAX : ==> sudo apt install pythonversion-venv
+
+        eg: sudo apt install python3.10-venv
+
+
+    # To create the virutal environment folder
+
+        SYNTAX : ==> python3 -m venv virtual_env_folder
+
+        eg: python3 -m venv jupyter_env
+
+
+    # Now, to activate virtual environment:
+    
+        SYNTAX : ==> source virtual_env_folder/bin/activate
+
+        eg: source jupyter_env/bin/activate
+
+        (Optional) NOTE: For checking which python version is in use at current moment.
+            ==> which python
+
+
+        # For installing jupyter :
+
+            ==> python -m pip install jupyter
+
+
+        # (OPTIONAL) for setting up seperate python kernel for virtual env:
+
+            SYNTAX : ==> python -m ipykernel install --user --name=venv
+
+            eg: python -m ipykernel install --user --name=jupyter_env
+
+
+        Now, To execute/run jupyter notebook/lab server in port '8888' tree:
+
+            ==> jupyter notebook
+
+                OR
+            
+            ==> jupyter lab
+    
+    
+
+Wallah !
